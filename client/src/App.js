@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { provider } from 'react-redux';
+import { Provider } from 'react-redux';
 import store from './store';
 
 import Navbar from './components/layout/Navbar';
@@ -13,7 +13,7 @@ import './App.css';
 
 function App() {
 	return (
-		<provider store={store}>
+		<Provider store={store}>
 			<Router>
 				<div className="App">
 					<Navbar />
@@ -27,7 +27,7 @@ function App() {
 					<Footer />
 				</div>
 			</Router>
-		</provider>
+		</Provider>
 	);
 }
 
